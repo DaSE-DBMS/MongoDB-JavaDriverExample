@@ -49,6 +49,10 @@ container-id可以用docker ps命令查看
 ## 3配置MongoDB Replica Set
 
 ### 3.1更改配置文件
+改一个更短的镜像名
+```
+docker tag registry.cn-hangzhou.aliyuncs.com/ybbh/mongodb-repl:latest mongodb-repl:latest
+```
 
 用拉取的镜像开启一个shell
 ```
