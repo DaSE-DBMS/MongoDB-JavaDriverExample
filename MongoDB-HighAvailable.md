@@ -50,7 +50,12 @@ container-id可以用docker ps命令查看
 
 ### 3.1更改配置文件
 
-编辑配置文件/etc/mongod.conf（这里是使用写配置文件的方式，在命令行里指定对应的参数也可）
+用拉取的镜像开启一个shell
+```
+docker run --interactive --tty mongodb-repl bash
+```
+
+在shell中编辑配置文件/etc/mongod.conf（这里是使用写配置文件的方式，在命令行里指定对应的参数也可）
 replication选项加入replSetName
 ```
 replication:
